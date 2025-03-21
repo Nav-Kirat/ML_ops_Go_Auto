@@ -1,0 +1,9 @@
+mlruns/
+.vscode/
+data/
+
+__pycache__/
+.gitignore/
+makefile
+Dockerfile
+.git/

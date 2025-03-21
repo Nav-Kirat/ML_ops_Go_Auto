@@ -3,3 +3,6 @@ model/
 mlruns/
 .env
 .env
+mlartifacts/
+/mlartifacts
+.env
