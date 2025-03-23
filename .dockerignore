@@ -7,3 +7,5 @@ __pycache__/
 makefile
 Dockerfile
 .git/
+predictions/
+models/
