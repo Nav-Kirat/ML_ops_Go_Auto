@@ -1,0 +1,39 @@
+version: '3'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "9000:9000"
+    volumes:
+      - ./models:/app/models
+      - ./data:/app/data
+      - ./app_files:/app/app_files
+      - ./model:/app/model
+    environment:
+      - MLFLOW_TRACKING_URI=http://mlflow:5000
+    depends_on:
+      - mlflow
+    networks:
+      - cars-network
+
+  mlflow:
+    build:
+      context: .
+      dockerfile: Dockerfile.mlflow
+    ports:
+      - "5000:5000"
+    volumes:
+      - mlflow-data:/mlflow
+    networks:
+      - cars-network
+
+networks:
+  cars-network:
+    driver: bridge
+
+volumes:
+  mlflow-data:
+    driver: local

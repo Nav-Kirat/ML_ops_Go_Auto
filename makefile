@@ -1,43 +1,42 @@
 SHELL := /bin/bash  # Ensure Makefile uses Bash
+VENV_ACTIVATE = . .venv/bin/activate  # Define virtual environment activation
 
-# Define virtual environment activation
-VENV=. .venv/bin/activate  # Use dot (.) instead of source
-
-# Create virtual environment
+# Setup virtual environment
 setup:
-	python3 -m venv .venv && . .venv/bin/activate && pip install -r requirements.txt
+    python3 -m venv .venv
+    $(VENV_ACTIVATE) && pip install -r requirements.txt
 
 # Install dependencies
 install:
-	$(VENV) && pip install -r requirements.txt
+    $(VENV_ACTIVATE) && pip install -r requirements.txt
 
 # Run basic app
 run-basic:
-	$(VENV) && streamlit run src/app.py
+    $(VENV_ACTIVATE) && streamlit run src/app.py
 
 # Run advanced app
 run-advanced:
-	$(VENV) && streamlit run src/advanced_app.py
+    $(VENV_ACTIVATE) && streamlit run src/advanced_app.py
 
 # Run tests inside virtual environment
 test:
-	$(VENV) && PYTHONPATH=$(pwd) pytest test/
+    $(VENV_ACTIVATE) && PYTHONPATH=$(pwd) pytest test/
 
-
-# MLFlow-init
+# Initialize MLFlow
 mlflow-init:
-   @echo " Initializing ML flow server"
-   $(PYTHON) src/utils/mlflow_initialize.py
+    @echo "Initializing MLflow server"
+    $(VENV_ACTIVATE) && python src/utils/mlflow_initialize.py
 
+# Train model
 train:
-   @echo "Running train.py"
-   $(PYTHON) model/train.py
+    @echo "Running train.py"
+    $(VENV_ACTIVATE) && python model/train.py
 
-#Run test
+# Predict using API
 predict:
-   @echo "Running tests.."
-    $(VENV) && python3 predict_api.py
+    @echo "Running predict_api.py"
+    $(VENV_ACTIVATE) && python predict_api.py
 
 # Clean up temporary files
 clean:
-	rm -rf __pycache__ */__pycache__		
+    rm -rf __pycache__ */__pycache__

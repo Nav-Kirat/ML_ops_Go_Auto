@@ -1,0 +1,14 @@
+{
+  "dataframe_split": {
+    "columns": [
+      "avg_price",
+      "mileage"
+    ],
+    "data": [
+      [
+        25000,
+        60000
+      ]
+    ]
+  }
+}

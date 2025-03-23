@@ -1,0 +1,32 @@
+artifact_path: kmeans_model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.3
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.6.1
+is_signature_from_type_hint: false
+mlflow_version: 2.20.2
+model_size_bytes: 423283
+model_uuid: 3721ffd15ca44c55aa7acc17c98b1d26
+run_id: c5c1cdadaa104f2da2360ace761bf6a7
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "long", "name": "avg_price", "required": true}, {"type": "long",
+    "name": "mileage", "required": true}]'
+  outputs: '[{"type": "integer", "required": true}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2025-02-23 21:14:28.016554'

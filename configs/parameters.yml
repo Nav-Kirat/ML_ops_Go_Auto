@@ -1,0 +1,48 @@
+# Paths for datasets and model storage
+paths:
+  raw_data: "data/"                  # Directory where input data is stored
+  app_files: "app_files/"             # Location of CSV files (new_cars.csv, used_cars.csv)
+  models_dir: "model/"                # Directory to store models
+  checkpoints: "model/checkpoints/"   # Where trained model checkpoints are stored
+
+# Clustering Model Settings
+model:
+  type: "kmeans"                      # Model type (allows flexibility in future)
+  n_clusters: 6                        # Number of clusters for KMeans
+  random_state: 42                     # Seed for reproducibility
+  max_iter: 300                        # Maximum number of iterations for convergence
+  tol: 1e-4                            # Stopping criteria (tolerance)
+
+# Training Settings (For other ML models in the future)
+training:
+  batch_size: null                     # Not applicable for KMeans
+  learning_rate: null                   # Not applicable for KMeans
+  epochs: null                           # Not applicable for KMeans
+  freeze_parameters: False              # No layers to freeze in KMeans
+
+clustering:
+  n_clusters: 6
+  random_state: 42
+  max_iter: 300
+  tol: 1e-4
+
+mlflow:
+  experiment_name: "Car_Clustering_Experiment"
+  run_name_prefix: "KMeans_Run"
+  tracking_uri: "http://127.0.0.1:8080"
+  log_metrics: ["inertia", "silhouette_score", "davies_bouldin_index"]  
+
+# Evaluation Settings (Replaced accuracy with relevant clustering metrics)
+evaluation:
+  metrics: 
+    - inertia                          # Sum of squared distances of samples to their closest cluster center
+    - silhouette_score                  # Measures how well data points fit into their clusters
+    - davies_bouldin_index              # Measures the separation between clusters
+
+# API Keys (Use environment variables for security)
+api:
+  opencage_key: ${OPENCAGE_KEY}
+
+google_drive_folder: ${GOOGLE_DRIVE_FOLDER}
+client_id: ${CLIENT_ID}
+client_secret: ${CLIENT_SECRET}

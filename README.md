@@ -104,3 +104,8 @@ It includes:
 ```bash
 curl -X GET http://127.0.0.1:9999/health_status
 
+## Running with Docker
+
+Build and start containers:
+```bash
+docker-compose up -d --build
