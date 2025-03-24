@@ -1,111 +1,144 @@
-# GoAuto Project
+# 🚗 GoAuto: Car Sales Analysis & Optimization
 
-## Overview
-This project analyzes car sales data to optimize dealership performance in Edmonton by leveraging machine learning models, exploratory data analysis (EDA), and predictive analytics. It is designed to provide insights into geographical clusters, sales patterns, and inventory optimization.
-
----
-
-## Features
-- **Exploratory Data Analysis (EDA):**
-  - Analyze car sales data to uncover trends and patterns.
-- **Clustering:**
-  - Group regions based on average price and mileage using KMeans clustering.
-- **Predictive Modeling:**
-  - Predict sales regions and dealership performance.
-- **Interactive Visualizations:**
-  - Use Streamlit to present data and insights interactively.
-- **REST API for Model Predictions:**
-Flask-based API to serve multiple versions of trained models.
-
+This project analyzes car sales data to optimize dealership performance in **Edmonton** using **exploratory data analysis (EDA)**, **clustering**, and **predictive modeling**. It provides actionable insights into sales trends, geographical performance, and inventory strategies via an interactive app and RESTful API.
 
 ---
 
-## Folder Structure
-```plaintext
+## 🔍 Key Features
+
+- **📊 Exploratory Data Analysis (EDA):**  
+  Gain insights into sales patterns, price distributions, and dealership trends.
+
+- **🧩 Clustering Analysis:**  
+  Use **KMeans** clustering to group regions based on average vehicle price and mileage.
+
+- **🤖 Predictive Modeling:**  
+  Predict sales regions and evaluate dealership performance using trained ML models.
+
+- **📈 Interactive Visualizations:**  
+  Built with **Streamlit** to allow real-time interaction and insights from the data.
+
+- **🌐 REST API for Predictions:**  
+  Flask-based API serving multiple versions of trained models for flexible integration.
+
+---
+
+## 📁 Project Structure
+
+```
 GoAuto Project/
-├── app_files/          # Static assets for the Streamlit app
-│   ├── Dealership-map.html # Map visualization
-│   ├── image.png       # Logo or other static images
-├── configs/            # Configuration files
-│   ├── config.yaml     # YAML configuration file
-├── data/               # Datasets for analysis
-│   ├── CBB_Listings_LongLat.csv # Main dataset
-│   ├── used_cars.csv   # Sample used cars data
-│   ├── new_cars.csv    # Sample new cars data
-├── docs                # Documentation
-├── experiment               # Experimentation
-├── model/              # Machine learning models and related code
-│   ├── clustering.py   # Clustering logic (KMeans)
-│   ├── prediction.py   # Prediction functions
-|   ├── checkpoints
-|   ├── _init_.py
-|   ├── predict_api.py
-|   ├── train.py
-├── notebook/           # Jupyter notebooks for experimentation
-│   ├── GoAuto.ipynb # Exploratory Data Analysis notebook
-├── src/                # Main application logic
-│   ├── app.py          # Basic Streamlit app
-│   ├── advanced_app.py # Advanced Streamlit app
-│   ├── data_analysis.py # Data exploration and visualization logic
-│   ├── visualization.py # Visualization functions
-|   ├── utilites.py
-├── test/               # Unit tests for the codebase
-│   ├── test_clustering.py # Tests for clustering logic
-│   ├── test_prediction.py # Tests for prediction logic
-├── requirements.txt    # Python dependencies
-├── makefile            # Automation tasks (setup, run, test)
-├── README.md           #Main Project documentation
+├── app_files/            # Static files for the Streamlit app
+│   ├── Dealership-map.html
+│   └── image.png
+├── configs/              # YAML config files
+│   └── config.yaml
+├── data/                 # Raw and processed datasets
+│   ├── CBB_Listings_LongLat.csv
+│   ├── used_cars.csv
+│   └── new_cars.csv
+├── docs/                 # Documentation
+├── experiment/           # Experimental scripts or results
+├── model/                # Model training, prediction, and clustering logic
+│   ├── clustering.py
+│   ├── prediction.py
+│   ├── checkpoints/
+│   ├── __init__.py
+│   ├── predict_api.py
+│   └── train.py
+├── notebook/             # Jupyter notebooks for EDA and experimentation
+│   └── GoAuto.ipynb
+├── src/                  # Main application logic
+│   ├── app.py
+│   ├── advanced_app.py
+│   ├── data_analysis.py
+│   ├── visualization.py
+│   └── utilities.py
+├── test/                 # Unit tests
+│   ├── test_clustering.py
+│   └── test_prediction.py
+├── requirements.txt      # Python dependencies
+├── Makefile              # Automation for setup and tasks
+└── README.md             # Project overview and instructions
+```
 
 ---
 
-## Setup
-1. Clone the repository:
+## ⚙️ Setup Instructions
+
+1. **Clone the repository**
    ```bash
    git clone <repository-url>
-   cd GoAuto Project
+   cd GoAuto\ Project
+   ```
 
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
+2. **Create and activate a virtual environment**
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate
+   ```
 
+3. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-## Usage
-### Run the Basic App
+---
+
+## 🚀 Usage
+
+### Run the Basic Streamlit App
 ```bash
 streamlit run src/app.py
+```
 
----
-
+### Run the Advanced Streamlit App
+```bash
 streamlit run src/advanced_app.py
-
-## API Endpoints & Usage
-
-### **1️⃣ API Overview**
-The **GoAuto Flask API** serves trained **KMeans clustering models** for predicting the best sales region for used cars based on **average price** and **mileage**. 
-
-It includes:
-- **Two prediction endpoints** for comparing different model versions.
-- **Health check & home endpoints** for API status and usage details.
+```
 
 ---
 
-### **2️⃣ API Endpoints**
-| **Method** | **Endpoint**        | **Description**                                     |
-|------------|---------------------|-----------------------------------------------------|
-| `GET`      | `/health_status`     | Check if the API is running.                       |
-| `GET`      | `/` (home)           | API welcome page with usage instructions.          |
-| `POST`     | `/v1/predict`        | Predict cluster using **Model V1 (6 clusters)**.   |
-| `POST`     | `/v2/predict`        | Predict cluster using **Model V2 (8 clusters)**.   |
+## 🔌 API Endpoints
+
+### 1️⃣ API Overview
+
+The **GoAuto Flask API** serves KMeans clustering models to predict the best **sales region** for a car based on **price** and **mileage**. It includes:
+
+- Multiple prediction endpoints (V1 & V2 models)
+- Health check and root endpoints
 
 ---
 
-### **3️⃣ Example Requests & Responses**
-#### ✅ **Check API Health**
+### 2️⃣ Available Endpoints
+
+| **Method** | **Endpoint**     | **Description**                                 |
+|------------|------------------|-------------------------------------------------|
+| `GET`      | `/health_status` | API health check                                |
+| `GET`      | `/`              | Welcome message with usage instructions         |
+| `POST`     | `/v1/predict`    | Predict region using **Model V1 (6 clusters)**  |
+| `POST`     | `/v2/predict`    | Predict region using **Model V2 (8 clusters)**  |
+
+---
+
+### 3️⃣ Example: Check API Health
 ```bash
 curl -X GET http://127.0.0.1:9999/health_status
+```
 
-## Running with Docker
+---
 
-Build and start containers:
+## 🐳 Run with Docker
+
+To build and run the app and API using Docker:
+
 ```bash
 docker-compose up -d --build
+```
+
+---
+
+## 📝 Final Notes
+
+- This project is optimized for analyzing **Edmonton-based dealership data**, but can be adapted to other locations.
+- Clustering models can be retrained with custom configurations.
+- Make sure to review and customize the `config.yaml` file as needed for deployments.
