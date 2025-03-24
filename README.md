@@ -1,6 +1,8 @@
 # 🚗 GoAuto: Car Sales Analysis & Optimization
 
-This project analyzes car sales data to optimize dealership performance in **Edmonton** using **exploratory data analysis (EDA)**, **clustering**, and **predictive modeling**. It provides actionable insights into sales trends, geographical performance, and inventory strategies via an interactive app and RESTful API.
+This project analyzes car sales data to optimize dealership performance in **Edmonton** using **exploratory data analysis (EDA)**, **clustering**, and **predictive modeling**. It provides actionable insights into sales trends, geographical performance via an interactive app and RESTful API.
+
+The goal? Help dealerships make smarter, data-driven decisions on pricing, marketing, and inventory!
 
 ---
 
