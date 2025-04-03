@@ -57,3 +57,5 @@ scikit-learn==1.6.1
 numpy==2.2.2  
 pandas==2.2.3  
 joblib==1.4.2  
+prometheus_flask_exporter==0.22.4
+

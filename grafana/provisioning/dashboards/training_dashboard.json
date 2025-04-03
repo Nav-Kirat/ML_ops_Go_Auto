@@ -1,0 +1,35 @@
+{
+    "id": null,
+    "title": "Training Metrics",
+    "tags": [],
+    "timezone": "browser",
+    "panels": [
+      {
+        "type": "graph",
+        "title": "Epoch Progress",
+        "targets": [
+          {
+            "expr": "training_epoch",
+            "legendFormat": "Epoch",
+            "refId": "A"
+          }
+        ],
+        "id": 1
+      },
+      {
+        "type": "graph",
+        "title": "Training Loss",
+        "targets": [
+          {
+            "expr": "training_loss",
+            "legendFormat": "Loss",
+            "refId": "B"
+          }
+        ],
+        "id": 2
+      }
+    ],
+    "schemaVersion": 26,
+    "version": 1
+  }
+  
