@@ -64,6 +64,15 @@ services:
     depends_on:
       - prometheus
 
+  training-metrics:
+    build:
+      context: ./training_metrics
+      dockerfile: Dockerfile
+    ports:
+      - "8002:8002"
+    networks:
+      - cars-network
+
 networks:
   cars-network:
     driver: bridge

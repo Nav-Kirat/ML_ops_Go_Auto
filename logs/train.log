@@ -1,0 +1,7 @@
+2025-04-08 19:24:22,800 - ml_app.train - INFO - 🚀 Starting MLflow tracking server...
+2025-04-08 19:24:27,802 - ml_app.train - INFO - 📡 MLflow tracking URI: http://localhost:8080
+2025-04-08 19:28:08,777 - ml_app.train - INFO - ✅ Model and scaler saved for 4 clusters
+2025-04-08 19:31:13,090 - ml_app.train - INFO - ✅ Model and scaler saved for 6 clusters
+2025-04-08 19:33:56,602 - ml_app.train - INFO - ✅ Model and scaler saved for 8 clusters
+2025-04-08 20:03:19,882 - ml_app.train - INFO - 🚀 Starting MLflow tracking server...
+2025-04-08 20:03:24,886 - ml_app.train - INFO - 📡 MLflow tracking URI: http://localhost:8080
