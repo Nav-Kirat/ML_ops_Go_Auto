@@ -1,55 +1,59 @@
 {
-    "id": null,
-    "title": "Prediction API Metrics",
-    "timezone": "browser",
-    "panels": [
-      {
-        "type": "graph",
-        "title": "Request Rate",
-        "targets": [
-          {
-            "expr": "rate(model_prediction_requests_total[1m])",
-            "legendFormat": "{{status}}",
-            "refId": "A"
-          }
-        ],
-        "id": 1
-      },
-      {
-        "type": "graph",
-        "title": "Prediction Duration (p95)",
-        "targets": [
-          {
-            "expr": "histogram_quantile(0.95, sum(rate(model_prediction_duration_seconds_bucket[5m])) by (le))",
-            "refId": "B"
-          }
-        ],
-        "id": 2
-      },
-      {
-        "type": "graph",
-        "title": "CPU Usage %",
-        "targets": [
-          {
-            "expr": "app_cpu_usage_percent",
-            "refId": "C"
-          }
-        ],
-        "id": 3
-      },
-      {
-        "type": "graph",
-        "title": "Memory Usage",
-        "targets": [
-          {
-            "expr": "app_memory_usage_bytes",
-            "refId": "D"
-          }
-        ],
-        "id": 4
-      }
-    ],
-    "schemaVersion": 26,
-    "version": 1
-  }
-  
+  "id": null,
+  "title": "Prediction API Metrics",
+  "timezone": "browser",
+  "schemaVersion": 26,
+  "version": 1,
+  "refresh": "5s",
+  "panels": [
+    {
+      "type": "timeseries",
+      "title": "Request Rate",
+      "datasource": "Prometheus",
+      "targets": [
+        {
+          "expr": "rate(model_prediction_requests_total[1m])",
+          "legendFormat": "Requests/sec",
+          "refId": "A"
+        }
+      ],
+      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 0 }
+    },
+    {
+      "type": "timeseries",
+      "title": "Prediction Duration (p95)",
+      "datasource": "Prometheus",
+      "targets": [
+        {
+          "expr": "histogram_quantile(0.95, sum(rate(model_prediction_duration_seconds_bucket[5m])) by (le))",
+          "refId": "B"
+        }
+      ],
+      "gridPos": { "h": 8, "w": 12, "x": 12, "y": 0 }
+    },
+    {
+      "type": "timeseries",
+      "title": "CPU Usage %",
+      "datasource": "Prometheus",
+      "targets": [
+        {
+          "expr": "app_cpu_usage_percent",
+          "refId": "C"
+        }
+      ],
+      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 8 }
+    },
+    {
+      "type": "timeseries",
+      "title": "Memory Usage",
+      "datasource": "Prometheus",
+      "targets": [
+        {
+          "expr": "app_memory_usage_bytes",
+          "refId": "D"
+        }
+      ],
+      "gridPos": { "h": 8, "w": 12, "x": 12, "y": 8 }
+    }
+  ]
+}

@@ -1,35 +1,75 @@
 {
-    "id": null,
-    "title": "Training Metrics",
-    "tags": [],
-    "timezone": "browser",
-    "panels": [
-      {
-        "type": "graph",
-        "title": "Epoch Progress",
-        "targets": [
-          {
-            "expr": "training_epoch",
-            "legendFormat": "Epoch",
-            "refId": "A"
-          }
-        ],
-        "id": 1
-      },
-      {
-        "type": "graph",
-        "title": "Training Loss",
-        "targets": [
-          {
-            "expr": "training_loss",
-            "legendFormat": "Loss",
-            "refId": "B"
-          }
-        ],
-        "id": 2
-      }
-    ],
-    "schemaVersion": 26,
-    "version": 1
-  }
-  
+  "id": null,
+  "title": "Training Metrics",
+  "timezone": "browser",
+  "schemaVersion": 26,
+  "version": 1,
+  "refresh": "5s",
+  "panels": [
+    {
+      "type": "timeseries",
+      "title": "Epochs Completed",
+      "datasource": "Prometheus",
+      "targets": [
+        {
+          "expr": "training_epochs_total",
+          "legendFormat": "Epoch",
+          "refId": "A"
+        }
+      ],
+      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 0 }
+    },
+    {
+      "type": "timeseries",
+      "title": "Training Loss",
+      "datasource": "Prometheus",
+      "targets": [
+        {
+          "expr": "training_loss",
+          "legendFormat": "Loss",
+          "refId": "B"
+        }
+      ],
+      "gridPos": { "h": 8, "w": 12, "x": 12, "y": 0 }
+    },
+    {
+      "type": "timeseries",
+      "title": "Silhouette Score",
+      "datasource": "Prometheus",
+      "targets": [
+        {
+          "expr": "silhouette_score",
+          "legendFormat": "Silhouette",
+          "refId": "C"
+        }
+      ],
+      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 8 }
+    },
+    {
+      "type": "timeseries",
+      "title": "Inertia",
+      "datasource": "Prometheus",
+      "targets": [
+        {
+          "expr": "inertia",
+          "legendFormat": "Inertia",
+          "refId": "D"
+        }
+      ],
+      "gridPos": { "h": 8, "w": 12, "x": 12, "y": 8 }
+    },
+    {
+      "type": "timeseries",
+      "title": "Davies-Bouldin Index",
+      "datasource": "Prometheus",
+      "targets": [
+        {
+          "expr": "dbi",
+          "legendFormat": "DBI",
+          "refId": "E"
+        }
+      ],
+      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 16 }
+    }
+  ]
+}

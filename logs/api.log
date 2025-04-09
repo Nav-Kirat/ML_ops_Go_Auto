@@ -1,0 +1,24 @@
+2025-04-08 20:18:03,402 - car_cluster_api - INFO - ✅ Models and scaler loaded successfully.
+2025-04-08 20:18:03,412 - car_cluster_api - INFO - ✅ Models and scaler loaded successfully.
+2025-04-08 20:18:03,412 - car_cluster_api - INFO - 🚀 Starting Flask API on port 9999...
+2025-04-08 20:18:03,454 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9000
+ * Running on http://172.23.206.133:9000
+2025-04-08 20:18:03,455 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-08 20:18:10,347 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 20:18:10] "GET / HTTP/1.1" 200 -
+2025-04-08 20:18:10,946 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 20:18:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-08 20:30:52,103 - car_cluster_api - INFO - ✅ Models and scaler loaded successfully.
+2025-04-08 20:30:52,125 - car_cluster_api - INFO - ✅ Models and scaler loaded successfully.
+2025-04-08 20:30:52,126 - car_cluster_api - INFO - 🚀 Starting Flask API on port 9999...
+2025-04-08 20:30:52,183 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9000
+ * Running on http://172.23.206.133:9000
+2025-04-08 20:30:52,184 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-08 20:31:33,788 - car_cluster_api - INFO - 📥 Input (v1): {'avg_price': 25000, 'mileage': 80000}
+2025-04-08 20:31:33,873 - car_cluster_api - INFO - 🎯 Prediction V1: 2
+2025-04-08 20:31:33,875 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 20:31:33] "POST /v1/predict HTTP/1.1" 200 -
+2025-04-08 20:33:51,009 - car_cluster_api - INFO - 📥 Input (v1): {'avg_price': 25000, 'mileage': 80000}
+2025-04-08 20:33:51,013 - car_cluster_api - INFO - 🎯 Prediction V1: 2
+2025-04-08 20:33:51,014 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 20:33:51] "POST /v1/predict HTTP/1.1" 200 -
