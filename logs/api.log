@@ -22,3 +22,72 @@
 2025-04-08 20:33:51,009 - car_cluster_api - INFO - 📥 Input (v1): {'avg_price': 25000, 'mileage': 80000}
 2025-04-08 20:33:51,013 - car_cluster_api - INFO - 🎯 Prediction V1: 2
 2025-04-08 20:33:51,014 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 20:33:51] "POST /v1/predict HTTP/1.1" 200 -
+2025-04-08 21:04:08,911 - car_cluster_api - INFO - 📥 Input (v1): {'avg_price': 25000, 'mileage': 80000}
+2025-04-08 21:04:09,522 - car_cluster_api - INFO - 🎯 Prediction V1: 2
+2025-04-08 21:04:09,573 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 21:04:09] "POST /v1/predict HTTP/1.1" 200 -
+2025-04-08 21:04:11,134 - car_cluster_api - INFO - 📥 Input (v1): {'avg_price': 25000, 'mileage': 80000}
+2025-04-08 21:04:11,139 - car_cluster_api - INFO - 🎯 Prediction V1: 2
+2025-04-08 21:04:11,140 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 21:04:11] "POST /v1/predict HTTP/1.1" 200 -
+2025-04-08 21:04:11,786 - car_cluster_api - INFO - 📥 Input (v1): {'avg_price': 25000, 'mileage': 80000}
+2025-04-08 21:04:11,791 - car_cluster_api - INFO - 🎯 Prediction V1: 2
+2025-04-08 21:04:11,794 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 21:04:11] "POST /v1/predict HTTP/1.1" 200 -
+2025-04-08 21:04:12,353 - car_cluster_api - INFO - 📥 Input (v1): {'avg_price': 25000, 'mileage': 80000}
+2025-04-08 21:04:12,362 - car_cluster_api - INFO - 🎯 Prediction V1: 2
+2025-04-08 21:04:12,364 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 21:04:12] "POST /v1/predict HTTP/1.1" 200 -
+2025-04-08 21:04:12,896 - car_cluster_api - INFO - 📥 Input (v1): {'avg_price': 25000, 'mileage': 80000}
+2025-04-08 21:04:12,900 - car_cluster_api - INFO - 🎯 Prediction V1: 2
+2025-04-08 21:04:12,902 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 21:04:12] "POST /v1/predict HTTP/1.1" 200 -
+2025-04-08 21:04:13,418 - car_cluster_api - INFO - 📥 Input (v1): {'avg_price': 25000, 'mileage': 80000}
+2025-04-08 21:04:13,423 - car_cluster_api - INFO - 🎯 Prediction V1: 2
+2025-04-08 21:04:13,424 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 21:04:13] "POST /v1/predict HTTP/1.1" 200 -
+2025-04-08 21:04:13,671 - car_cluster_api - INFO - 📥 Input (v1): {'avg_price': 25000, 'mileage': 80000}
+2025-04-08 21:04:13,678 - car_cluster_api - INFO - 🎯 Prediction V1: 2
+2025-04-08 21:04:13,682 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 21:04:13] "POST /v1/predict HTTP/1.1" 200 -
+2025-04-08 21:04:13,855 - car_cluster_api - INFO - 📥 Input (v1): {'avg_price': 25000, 'mileage': 80000}
+2025-04-08 21:04:13,857 - car_cluster_api - INFO - 🎯 Prediction V1: 2
+2025-04-08 21:04:13,860 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 21:04:13] "POST /v1/predict HTTP/1.1" 200 -
+2025-04-08 21:04:14,036 - car_cluster_api - INFO - 📥 Input (v1): {'avg_price': 25000, 'mileage': 80000}
+2025-04-08 21:04:14,042 - car_cluster_api - INFO - 🎯 Prediction V1: 2
+2025-04-08 21:04:14,044 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 21:04:14] "POST /v1/predict HTTP/1.1" 200 -
+2025-04-08 21:04:15,359 - car_cluster_api - INFO - 📥 Input (v1): {'avg_price': 25000, 'mileage': 80000}
+2025-04-08 21:04:15,364 - car_cluster_api - INFO - 🎯 Prediction V1: 2
+2025-04-08 21:04:15,365 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 21:04:15] "POST /v1/predict HTTP/1.1" 200 -
+2025-04-08 21:04:16,034 - car_cluster_api - INFO - 📥 Input (v1): {'avg_price': 25000, 'mileage': 80000}
+2025-04-08 21:04:16,038 - car_cluster_api - INFO - 🎯 Prediction V1: 2
+2025-04-08 21:04:16,040 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 21:04:16] "POST /v1/predict HTTP/1.1" 200 -
+2025-04-08 21:04:16,269 - car_cluster_api - INFO - 📥 Input (v1): {'avg_price': 25000, 'mileage': 80000}
+2025-04-08 21:04:16,279 - car_cluster_api - INFO - 🎯 Prediction V1: 2
+2025-04-08 21:04:16,282 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 21:04:16] "POST /v1/predict HTTP/1.1" 200 -
+2025-04-08 21:04:16,486 - car_cluster_api - INFO - 📥 Input (v1): {'avg_price': 25000, 'mileage': 80000}
+2025-04-08 21:04:16,492 - car_cluster_api - INFO - 🎯 Prediction V1: 2
+2025-04-08 21:04:16,495 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 21:04:16] "POST /v1/predict HTTP/1.1" 200 -
+2025-04-08 21:04:16,666 - car_cluster_api - INFO - 📥 Input (v1): {'avg_price': 25000, 'mileage': 80000}
+2025-04-08 21:04:16,668 - car_cluster_api - INFO - 🎯 Prediction V1: 2
+2025-04-08 21:04:16,670 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 21:04:16] "POST /v1/predict HTTP/1.1" 200 -
+2025-04-08 21:04:16,851 - car_cluster_api - INFO - 📥 Input (v1): {'avg_price': 25000, 'mileage': 80000}
+2025-04-08 21:04:16,861 - car_cluster_api - INFO - 🎯 Prediction V1: 2
+2025-04-08 21:04:16,863 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 21:04:16] "POST /v1/predict HTTP/1.1" 200 -
+2025-04-08 21:04:17,069 - car_cluster_api - INFO - 📥 Input (v1): {'avg_price': 25000, 'mileage': 80000}
+2025-04-08 21:04:17,078 - car_cluster_api - INFO - 🎯 Prediction V1: 2
+2025-04-08 21:04:17,083 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 21:04:17] "POST /v1/predict HTTP/1.1" 200 -
+2025-04-08 21:04:17,246 - car_cluster_api - INFO - 📥 Input (v1): {'avg_price': 25000, 'mileage': 80000}
+2025-04-08 21:04:17,252 - car_cluster_api - INFO - 🎯 Prediction V1: 2
+2025-04-08 21:04:17,255 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 21:04:17] "POST /v1/predict HTTP/1.1" 200 -
+2025-04-08 21:04:17,426 - car_cluster_api - INFO - 📥 Input (v1): {'avg_price': 25000, 'mileage': 80000}
+2025-04-08 21:04:17,434 - car_cluster_api - INFO - 🎯 Prediction V1: 2
+2025-04-08 21:04:17,436 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 21:04:17] "POST /v1/predict HTTP/1.1" 200 -
+2025-04-08 21:04:17,599 - car_cluster_api - INFO - 📥 Input (v1): {'avg_price': 25000, 'mileage': 80000}
+2025-04-08 21:04:17,606 - car_cluster_api - INFO - 🎯 Prediction V1: 2
+2025-04-08 21:04:17,607 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 21:04:17] "POST /v1/predict HTTP/1.1" 200 -
+2025-04-08 21:04:17,747 - car_cluster_api - INFO - 📥 Input (v1): {'avg_price': 25000, 'mileage': 80000}
+2025-04-08 21:04:17,754 - car_cluster_api - INFO - 🎯 Prediction V1: 2
+2025-04-08 21:04:17,755 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 21:04:17] "POST /v1/predict HTTP/1.1" 200 -
+2025-04-08 21:04:17,871 - car_cluster_api - INFO - 📥 Input (v1): {'avg_price': 25000, 'mileage': 80000}
+2025-04-08 21:04:17,874 - car_cluster_api - INFO - 🎯 Prediction V1: 2
+2025-04-08 21:04:17,877 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 21:04:17] "POST /v1/predict HTTP/1.1" 200 -
+2025-04-08 21:04:19,355 - car_cluster_api - INFO - 📥 Input (v1): {'avg_price': 25000, 'mileage': 80000}
+2025-04-08 21:04:19,374 - car_cluster_api - INFO - 🎯 Prediction V1: 2
+2025-04-08 21:04:19,378 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 21:04:19] "POST /v1/predict HTTP/1.1" 200 -
+2025-04-08 21:05:30,067 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 21:05:30] "[33mGET /v1/predict%20/%20-H%20"Content-Type:%20application/json"%20/%20-d%20'{"avg_price":%2025000,%20"mileage":%2080000}' HTTP/1.1[0m" 404 -
+2025-04-08 21:05:36,940 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 21:05:36] "[31m[1mGET /v1/predict HTTP/1.1[0m" 405 -
+2025-04-08 21:05:39,994 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 21:05:39] "[31m[1mGET /v1/predict HTTP/1.1[0m" 405 -
