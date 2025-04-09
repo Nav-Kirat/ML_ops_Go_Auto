@@ -11,10 +11,6 @@ scrape_configs:
     static_configs:
       - targets: ['app:9000']
 
-  - job_name: 'flask_app'
-    static_configs:
-      - targets: ['app:9000']
-
   - job_name: 'prometheus'
     scrape_interval: 10s
     static_configs:
